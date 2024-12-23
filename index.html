@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charan Voore Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1c1e;
+            color: #f5f5f7;
+        }
+        header {
+            background-color: #282a36;
+            color: #f8f8f2;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #8be9fd;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 60px 20px;
+        }
+        .about, .projects, .skills, .contact {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #44475a;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .about h2, .projects h2, .skills h2, .contact h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .about-content p {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .profile-photo {
+            flex: 1;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .projects .project, .skills .skill {
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #282a36;
+            color: #f8f8f2;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: #50fa7b;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .animation-container {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .animation-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Charan Voore</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>
+                Passionate Software Engineer with excellent programming skills seeking an entry-level development role. I am currently pursuing a degree in Computer Science with a specialization in Artificial Intelligence and Machine Learning. 
+            </p>
+            <p>
+                I bring strong technical skills, great communication, and a knack for solving challenging problems. In addition to my technical pursuits, I enjoy coding and exploring India.
+            </p>
+            <img src="charan.jpg" alt="Charan's Profile" class="profile-photo">
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="project animation-container">
+            <h3>EDA-AMCAT Data Analysis</h3>
+            <p>Conducted data cleaning and analysis to reveal insights from engineering graduates' outcomes.</p>
+            <a href="https://github.com/VooreCharan/AMCAT-DATA-ANALYSIS">View Project</a>
+        </div>
+        <div class="project animation-container">
+            <h3>Electric Vehicle Data Analysis</h3>
+            <p>Performed univariate and bivariate analysis on electric vehicle datasets.</p>
+            <a href="https://github.com/VooreCharan/Electrical-vehicle">View Project</a>
+        </div>
+        <div class="project animation-container">
+            <h3>Diamond Price Prediction</h3>
+            <p>Developed a machine learning model for diamond price prediction using feature engineering and model optimization techniques.</p>
+            <a href="https://github.com/VooreCharan/Diamond-Price-Predict">View Project</a>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <strong>Technical Skills:</strong> C, Java, Python, HTML, CSS, JavaScript
+        </div>
+        <div class="skill">
+            <strong>Tools:</strong> Figma, Flutter Flow, Canva
+        </div>
+        <div class="skill">
+            <strong>Creative Skills:</strong> Video Editing (CapCut, VN, Alight Motion), Photo Editing (Adobe Lightroom, Snapseed, Picsart)
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:voorecharan@gmail.com">voorecharan@gmail.com</a></p>
+        <p>Phone: 9676726518</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/charanvoore" target="_blank">charanvoore</a></p>
+        <p>GitHub: <a href="https://github.com/VooreCharan" target="_blank">VooreCharan</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Charan Voore. Built with love for coding and creativity.</p>
+    </footer>
+</body>
+</html>
